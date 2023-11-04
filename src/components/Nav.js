@@ -15,7 +15,6 @@ const Nav = () => {
                 setColumn(data1.data)
                 setEvents(data1.events)
             })
-            console.log('hello')
     }, [])
 
 
@@ -24,8 +23,6 @@ const Nav = () => {
 
     const handleChange = event => {
         selected=event?.target.value;
-        console.log(event?.target.value);
-        console.log(selected)
         setEventIndex(events.findIndex(object => {
             return object.name === selected;
         }
