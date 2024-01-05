@@ -9,7 +9,7 @@ const Nav = () => {
 
 
     useEffect(() => {
-        fetch('https://testpetri.onrender.com/api/events')
+        fetch('https://petrichor-backend.vercel.app/api/events')
             .then(res => res.json())
             .then(data1 => {
                 setColumn(data1.data)
